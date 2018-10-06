@@ -30,6 +30,37 @@
           <p>My goal is to work in professional developer team and create awesome products which will help humans.</p> 
           <hr>
       </section>
+      <section class="skills">
+        <h3>Skills</h3>
+        <img class="tech" src="img/web-tech.png" alt="Web-technologies" height="200" width="528">
+        <a href="https://github.com/artkon"><img class="tech" src="img/github.png" alt="github" height="200" width="650"></a>
+        <p class="center">Go to my <a href="https://github.com/artkon">GitHub account</a></p>
+        <hr>  
+      </section>
+      <section class="code-example">
+        <h3>Code Example</h3>
+        <p>Task - Implement function check(str, bracketsConfig), that for given brackets 
+          sequence will return true if it is correct and false otherwise</p>
+        <p><a href="https://github.com/artkon/additional_5">Link</a> to GitHub</p>
+  <pre>function check(str, bracketsConfig) {
+    let tempStr = str;
+
+    let deleted = true;
+    while (deleted) {
+      deleted = false;
+      for(let i = 0, confLen = bracketsConfig.length; i &lt; confLen; i++){
+        const doubleBrackets = bracketsConfig[i].join('');
+        if( ~tempStr.indexOf(doubleBrackets) ) {
+          tempStr = tempStr.replace(doubleBrackets, '' );
+          deleted = true;
+        }
+      }
+    }
+
+    return tempStr === '';
+        </pre>
+        <hr>
+      </section>
     </div>
   </body>
 </html>

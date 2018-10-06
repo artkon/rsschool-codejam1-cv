@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+  background-image: url("../img/oriental.png");
+}
+
+.wrapper {
+  width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px; 
+  font-family: 'Courier New', Courier, monospace;
+  background-color: WhiteSmoke;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.avatar {
+  float: left;
+  margin-right: 25px;
+  height: 400px;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.summary {
+  margin-bottom: 100px;
+}
+
+.tech {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Artsem Kanapelka - Curriculum Vitae</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Curriculum Vitae</h1>
+        <h2>Artsem Kanapelka - Junior Developer</h2>
+      </header>
+      <section class="contacts">
+          <img class="avatar" src="img/photo.png" alt="photo" height="400" width="300">
+      <h3>Contacts</h3>
+        <ul>
+          <li><a href="tel:+375295381388">+375(29)538-13-88</a></li>
+          <li><a href="mailto:artemkonopelko@gmail.com">artemkonopelko@gmail.com</a></li>
+          <li>Viber/Telegram/WhatsUp: +41787353953</li>
+          <li><a href="skype:artemkonopelko?call">Call me</a> on skype: artemkonopelko</li>
+        </ul>
+      </section>
+      <section class="summary">
+        <h3>Summary</h3>
+        <p>Bachelor’s degree in web development.</p> 
+        <p>I enjoy being challenged and engaging with projects
+          that require me to work outside my comfort and knowledge set, as continuing to learn 
+          new languages and development techniques are important to me and the success of 
+          organization where I work. </p>
+          <p>My goal is to work in professional developer team and create awesome products which will help humans.</p> 
+          <hr>
+      </section>
+      <section class="skills">
+        <h3>Skills</h3>
+        <img class="tech" src="img/web-tech.png" alt="Web-technologies" height="200" width="528">
+        <a href="https://github.com/artkon"><img class="tech" src="img/github.png" alt="github" height="200" width="650"></a>
+        <p class="center">Go to my <a href="https://github.com/artkon">GitHub account</a></p>
+        <hr>  
+      </section>
+      <section class="code-example">
+        <h3>Code Example</h3>
+        <p>Task - Implement function check(str, bracketsConfig), that for given brackets 
+          sequence will return true if it is correct and false otherwise</p>
+        <p><a href="https://github.com/artkon/additional_5">Link</a> to GitHub</p>
+  <pre>function check(str, bracketsConfig) {
+    let tempStr = str;
+
+    let deleted = true;
+    while (deleted) {
+      deleted = false;
+      for(let i = 0, confLen = bracketsConfig.length; i &lt; confLen; i++){
+        const doubleBrackets = bracketsConfig[i].join('');
+        if( ~tempStr.indexOf(doubleBrackets) ) {
+          tempStr = tempStr.replace(doubleBrackets, '' );
+          deleted = true;
+        }
+      }
+    }
+
+    return tempStr === '';
+        </pre>
+        <hr>
+      </section>
+      <section class="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li><a href="https://github.com/artkon">Rolling Scopes School 13 tasks</a></li>
+          <li>Twitter on Ruby on Rails and Bootstrap 3</li>
+          <li>Parsers for online store on PHP</li>
+          <li>Real estate ads aggregator</li>
+        </ul>
+      </section>
+      <section class="education">
+        <h3>Education</h3>
+        <p>Belarusian State University, Mechanics and Mathematics Faculty, 2017</p>
+        <ul>
+          <li>HTML Academy</li>
+          <li>Code Academy</li>
+          <li>learn.javascript.ru</li>
+          <li>Udacity CS 101</li>
+          <li>Ruby on Rails course</li>
+          <li>Java EE course</li>
+        </ul>
+      </section>
+      <section class="english">
+        <h3>English level</h3>
+        <ul>
+          <li>1 year English course</li>
+          <li>1 year work abroad in English.</li>
+        </ul>
+        <hr>
+      </section>
+      <footer>
+        <p class="center">Have a nice day ;)</p>
+      </footer>
+    </div>
+  </body>
+</html>
